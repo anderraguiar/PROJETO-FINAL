@@ -9,9 +9,8 @@ app.register_blueprint(aluno_controller)
 app.register_blueprint(controller)
 
 
-# Ponto de entrada padrão da Vercel
-def handler(request, *args, **kwargs):
-    return app(request, *args, **kwargs)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
 
 '''
 if __name__ == "__main__":
