@@ -15,7 +15,7 @@ def listar_alunos():
     return jsonify(alunos)
 
 @aluno_controller.route('/', methods=['POST'])
-@autenticacao
+#@autenticacao
 def adicionar_aluno():
     dados = request.get_json()
 
